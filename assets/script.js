@@ -1,1 +1,8 @@
-console.log("It's working");
+//----- MathJax Config ------
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+};
+
+
