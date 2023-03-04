@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    padding: 2em ;
+    border: solid 2px palevioletred ;
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+.user-input {
+    display: flex;
+    font-size: 2rem;
+    margin: 0.5em auto;
+    min-width: 300px;
+}
+
+.math-field {
+    max-width: 20vw;
+}

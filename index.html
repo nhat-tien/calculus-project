@@ -10,9 +10,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.6.0/math.js" integrity="sha512-RefYJFvLbj6WnGkdf40i7tlnvORh5VhCXuyaYRrj0hu5y0aHMCO1ROPLnRfMzbZ7SJqCYaQ92EAsGf9OyY9BNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="//unpkg.com/mathlive"></script>
     <script src="assets/script.js"></script>
-    <style href="assets/style.css"></style>
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-    <math-field>f(x) = \sin(x+\pi)</math-field>
+    <main class="app">
+    <div class="user-input">
+        <span>$\frac{d}{dx}$</span>
+        <div class="math-field">
+            <math-field virtual-keyboard-mode="manual">\sin(x+\pi)</math-field>
+        </div>
+    </div>
+    <button>Click me!</button>
+    <div class="answer"></div>
+</main>
 </body>
 </html>
