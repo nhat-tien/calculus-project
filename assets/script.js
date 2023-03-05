@@ -1,8 +1,3 @@
-//----- MathJax Config ------
-MathJax = {
-    tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-};
+console.log("It's working");
 
 
