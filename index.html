@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculus</title>
+    <link rel="stylesheet" href="assets/style.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="assets/js-module/mathjax-config.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.6.0/math.js" integrity="sha512-RefYJFvLbj6WnGkdf40i7tlnvORh5VhCXuyaYRrj0hu5y0aHMCO1ROPLnRfMzbZ7SJqCYaQ92EAsGf9OyY9BNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="//unpkg.com/mathlive"></script>
-    <script type="module" src="assets/main.js"></script>
-    <link rel="stylesheet" href="assets/style.css" />
+    <script type="module" src="assets/index.js"></script>
 </head>
 <body>
-    <main class="app">
-    <div class="user-input">
-        <span>\(\frac{d}{dx}\)</span>
-        <div class="math-field">
-            <math-field virtual-keyboard-mode="manual">\sin(x+\pi)</math-field>
+<main class="app">
+        <div class="user-input">
+            <span>\(f(x,y)=\)</span>
+            <div class="math-field">
+                <math-field id="formula" virtual-keyboard-mode="manual">\sin(x+\pi)</math-field>
+            </div>
         </div>
-    </div>
-    <button>Click me!</button>
-    <div class="answer"></div>
+        <button id="button" class="btn-primary">Click me to đạo hàm!</button>
+        <div id="answer" class="answer-area">
+            <div class="flex-box container">
+                <span>\(\frac{\partial f}{\partial x}=\)</span>
+                <div id="derivativeX" class="derivativeX__answer"></div>
+            </div>
+            <div class="flex-box container">
+                <span>\(\frac{\partial f}{\partial y}=\)</span>
+                <div id="derivativeY" class="derivativeY__answer"></div>
+            </div>
+        </div>
 </main>
 </body>
 </html>

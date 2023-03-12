@@ -17,7 +17,7 @@ body {
 }
 
 .app {
-    padding: 2em ;
+    padding: 1em ;
     border: solid 2px palevioletred ;
     border-radius: 20px;
     width: 300px;
@@ -25,10 +25,42 @@ body {
 
 .user-input {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0.5em auto;
 }
 
+.user-input span {
+    display: flex;
+    align-items: center;
+}
+
 .math-field {
-    width: 80%;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.answer-area {
+    margin: 1em auto;
+    font-size: 1.2rem;
+}
+
+.derivativeX__answer {
+    display: flex;
+    align-items: center;
+}
+
+.derivativeY__answer {
+    display: flex;
+    align-items: center;
+}
+
+/*  Utility */
+.flex-box {
+    display: flex;
+}
+.container {
+    margin: 1em auto;
+    padding: 0.2em;
 }
