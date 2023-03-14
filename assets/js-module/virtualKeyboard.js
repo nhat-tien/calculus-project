@@ -1,12 +1,13 @@
 const virtualKeyboard = {
     customVirtualKeyboardLayers: {
         college: {
-            styles: "",
+            styles: "container{",
         rows: [
             [
                 {
-                    class: "keycap tex",
-                    label: "<i>a</i>"
+                    class: "keycap",
+                    latex: "\\sin",
+                    insert: "$$sin(#0)$$"
                 },
                 {
                     class: "keycap tex",
@@ -53,8 +54,9 @@ const virtualKeyboard = {
             ],
             [
                 {
-                    class: "keycap tex",
-                    label: "<i>b</i>"
+                    class: "keycap",
+                    latex: "\\cos",
+                    insert: "$$cos(#0)$$"
                 },
                 {
                     class: "keycap tex",
@@ -91,16 +93,19 @@ const virtualKeyboard = {
                 {
                     class: "keycap",
                     latex: "\\ln",
-                    insert: "$$ln$$"
+                    insert: "$$ln(#0)$$"
                 },
                 {
-                    class: "separator w6"
+                    class: "keycap",
+                    latex: "\\exponentialE",
+                    insert: "$$e$$"
                 }
             ],
             [
                 {
-                    class: "keycap tex",
-                    label: "<i>c</i>"
+                    class: "keycap",
+                    latex: "\\tan",
+                    insert: "$$tan(#0)$$"
                 },
                 {
                     class: "keycap tex",
@@ -130,13 +135,19 @@ const virtualKeyboard = {
                     class: "separator w5"
                 },
                 {
-                    class: "separator w6"
+                    class: "keycap small",
+                    label: "atan",
+                    insert: "$$arctan(#0)$$"
                 },
                 {
-                    class: "separator w6"
+                    class: "keycap tex",
+                    latex: "\\exponentialE",
+                    insert: "$$e$$"
                 },
                 {
-                    class: "separator w6"
+                    class: "keycap",
+                    latex: "\\exponentialE",
+                    insert: "$$e$$"
                 }
             ],
             [

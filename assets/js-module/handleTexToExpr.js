@@ -21,12 +21,7 @@ export default function handleTexToExpr( tex ) {
             return this;
         }
         addDivide() {
-            let str = this.tex;
-            let index = str.indexOf(")(");
-            if(index > 0) {
-                let strAfter = str.slice(0,index+1) + "/" + str.slice(index+1);
-                this.tex = strAfter;
-            }
+            this.tex = this.tex.replaceAll(")(",")/(");
             return this;
         }
         replaceLn() {
@@ -39,15 +34,12 @@ export default function handleTexToExpr( tex ) {
         }
         //*
         addAsterick() {
-            let str = this.tex;
-            let index = str.indexOf("xy");
-            if(index < 0) {
-                index = str.indexOf("yx");
-            }
-            if(index > 0) {
-                let strAfter = str.slice(0,index+1) + "*" + str.slice(index+1);
-                this.tex = strAfter;
-            }
+            this.tex = this.tex.replaceAll(/xy/g,"x*y");
+            this.tex = this.tex.replaceAll(/yx/g,"x*y");
+            return this;
+        }
+        replaceArctan() {
+            this.tex = this.tex.replaceAll(/arctan/g,"atan");
             return this;
         }
 
@@ -63,6 +55,7 @@ export default function handleTexToExpr( tex ) {
                 .replaceLn()
                 .replaceExponentialE()
                 .addAsterick()
+                .replaceArctan()
 
     return str.tex;
 }
