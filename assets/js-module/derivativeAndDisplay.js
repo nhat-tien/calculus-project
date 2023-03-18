@@ -7,8 +7,8 @@ export default function derivativeAndDisplay() {
     console.log(mf.value);
     console.log(expr);
 
-    const nodeY = math.derivative(expr,"y");
-    const nodeX = math.derivative(expr,"x");
+    const nodeY = math.derivative(expr,"y",{simplify:false});
+    const nodeX = math.derivative(expr,"x",{simplify:false});
 
     const answerX = document.getElementById("derivativeX");
     const answerY = document.getElementById("derivativeY");

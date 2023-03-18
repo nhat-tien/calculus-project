@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculus</title>
+    <link rel="icon" href="assets/images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -15,21 +19,25 @@
 </head>
 <body>
 <main class="app">
+        <div class="header">
+            <img class="header__icon" src="assets/images/icon-calculator.svg" alt="icon-calculator" />
+            <h3 class="header__title">Máy tính đạo hàm</h3>
+        </div>
         <div class="user-input">
             <span>\(f(x,y)=\)</span>
             <div class="math-field">
-                <math-field id="formula" virtual-keyboard-mode="manual">\sin(x+\pi)</math-field>
+                <math-field id="formula" virtual-keyboard-mode="onfocus">\sin(x+\pi)</math-field>
             </div>
         </div>
         <button id="button" class="btn-primary">Click me to đạo hàm!</button>
         <div id="answer" class="answer-area">
             <div class="flex-box container">
-                <span>\(\frac{\partial f}{\partial x}=\)</span>
-                <div id="derivativeX" class="derivativeX__answer"></div>
+                <span style="display:flex;align-items:center;">\(\frac{\partial f}{\partial x}=\)</span>
+                <div id="derivativeX" class="derivative__answer"></div>
             </div>
             <div class="flex-box container">
-                <span>\(\frac{\partial f}{\partial y}=\)</span>
-                <div id="derivativeY" class="derivativeY__answer"></div>
+                <span style="display:flex;align-items:center;">\(\frac{\partial f}{\partial y}=\)</span>
+                <div id="derivativeY" class="derivative__answer"></div>
             </div>
         </div>
 </main>
