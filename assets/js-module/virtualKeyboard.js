@@ -98,7 +98,7 @@ const virtualKeyboard = {
                 {
                     class: "keycap",
                     latex: "\\exponentialE",
-                    insert: "$$e$$"
+                    insert: "e"
                 }
             ],
             [
@@ -142,12 +142,12 @@ const virtualKeyboard = {
                 {
                     class: "keycap tex",
                     latex: "\\exponentialE",
-                    insert: "$$e$$"
+                    insert: "e"
                 },
                 {
                     class: "keycap",
                     latex: "\\exponentialE",
-                    insert: "$$e$$"
+                    insert: "e"
                 }
             ],
             [

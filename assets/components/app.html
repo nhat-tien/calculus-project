@@ -1,8 +1,3 @@
-import derivativeAndDisplay from "./js-module/derivativeAndDisplay.js"
-import { virtualKeyboard } from "./js-module/virtualKeyboard.js";
-
-
-document.querySelector("#app").innerHTML = `
 <main class="app">
     <div class="header">
         <img class="header__icon" src="assets/images/icon-calculator.svg" alt="icon-calculator" />
@@ -26,15 +21,3 @@ document.querySelector("#app").innerHTML = `
         </div>
     </div>
 </main>
-`;
-
-MathJax.typeset();
-
-const bt = document.getElementById("button");
-bt.addEventListener("click",derivativeAndDisplay);
-
-const mf = document.getElementById("formula");
-mf.setOptions({
-    ...virtualKeyboard
-});
-
