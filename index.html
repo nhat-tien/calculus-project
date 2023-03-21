@@ -9,15 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="assets/js-module/mathjax-config.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.6.0/math.js" integrity="sha512-RefYJFvLbj6WnGkdf40i7tlnvORh5VhCXuyaYRrj0hu5y0aHMCO1ROPLnRfMzbZ7SJqCYaQ92EAsGf9OyY9BNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="//unpkg.com/mathlive"></script>
+    <link rel="stylesheet" href="assets/style.css" />
     <script type="module" src="assets/index.js"></script>
 </head>
 <body>
-<div id="app"></div>
+    <main class="app">
+        <div class="header">
+            <img class="header__icon" src="assets/images/icon-calculator.svg" alt="icon-calculator" />
+            <h3 class="header__title">Máy tính đạo hàm</h3>
+        </div>
+        <div class="user-input">
+            <span>\(f(x,y)=\)</span>
+            <div class="math-field">
+                <math-field id="formula">\sin(x+\pi)</math-field>
+            </div>
+        </div>
+        <button id="button" class="btn-primary">Click me to đạo hàm!</button>
+        <div id="answer" class="answer-area">
+            <div class="flex-box container">
+                <span style="display:flex;align-items:center;">\(\frac{\partial f}{\partial x}=\)</span>
+                <div id="derivativeX" class="derivative__answer"></div>
+            </div>
+            <div class="flex-box container">
+                <span style="display:flex;align-items:center;">\(\frac{\partial f}{\partial y}=\)</span>
+                <div id="derivativeY" class="derivative__answer"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

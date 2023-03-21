@@ -9,10 +9,12 @@ html {
 }
 
 body {
+    --keycap-font-size: 19px;
     display: grid;
     place-items: center;
     min-height: 100vh;
     background-color: #1e1e1e;
+    overflow-x: hidden;
 }
 
 .app {
@@ -48,6 +50,8 @@ body {
     font-size: 1.4rem;
     width: 100%;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .btn-primary {
@@ -72,17 +76,33 @@ body {
 }
 
 /*css for the scrollbar */
-::-webkit-scrollbar {
+.derivative__answer::-webkit-scrollbar {
     height: 2px;
     width: 2px;
 }
-::-webkit-scrollbar-track {
+.derivative__answer::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
-::-webkit-scrollbar-thumb {
+.derivative__answer::-webkit-scrollbar-thumb {
     background-color: #888;
 }
+@media (pointer: coarse) {
+    math-field::part(virtual-keyboard-toggle) {
+        display: none;
+    }
+}
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+math-field {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    width: 195px;
+    overflow: scroll;
+}
 
 .header__title {
     color: #DEE1EF;
