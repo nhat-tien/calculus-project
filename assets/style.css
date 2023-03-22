@@ -86,11 +86,11 @@ body {
 .derivative__answer::-webkit-scrollbar-thumb {
     background-color: #888;
 }
-@media (pointer: coarse) {
+/* @media (pointer: coarse) {
     math-field::part(virtual-keyboard-toggle) {
         display: none;
     }
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
