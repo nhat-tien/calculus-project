@@ -3,7 +3,7 @@
 ### In this study project I used
 - HTML, CSS, JavaScript.
 - MathJax (display TeX).
-- MathJS libray (calculate the basic derivative).
+- MathJS library (calculate the basic derivative).
 - MathLive virtual-keyboard (with my custom layout)
 ### Link Demo
 https://calculus-project.netlify.app/
