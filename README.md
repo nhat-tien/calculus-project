@@ -1,3 +1,9 @@
 # Calculus project
-## A study web app 
-- [Link to demo](https://calculus-project.netlify.app/)
+> A study web app 
+### In this study project I used
+- HTML, CSS, JavaScript.
+- MathJax (display TeX).
+- MathJS libray (calculate the basic derivative).
+- MathLive virtual-keyboard (with my custom layout)
+### Link Demo
+https://calculus-project.netlify.app/
