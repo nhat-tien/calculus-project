@@ -2,6 +2,7 @@
 const virtualKeyboard = {
         label: "College",
         toolip: "Only the essential",
+        styles: ".digit { background: blue; color: white }",
         rows: [
         [
             {
@@ -11,7 +12,8 @@ const virtualKeyboard = {
             },
             {
                 class: "keycap tex",
-                label: "<i>x</i>"
+                label: "<i>x</i>",
+                insert: "$$x$$"
             },
             {
                 class: "separator w5"
@@ -60,7 +62,8 @@ const virtualKeyboard = {
             },
             {
                 class: "keycap tex",
-                label: "<i>y</i>"
+                label: "<i>y</i>",
+                insert: "$$y$$"
             },
             {
                 class: "separator w5"
@@ -108,8 +111,9 @@ const virtualKeyboard = {
                 insert: "$$tan(#0)$$"
             },
             {
-                class: "keycap tex",
-                label: "<i>z</i>"
+                class: "keycap tex digit",
+                label: "<i>z</i>",
+                insert: "$$z$$"
             },
             {
                 class: "separator w5"
