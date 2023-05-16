@@ -13,7 +13,7 @@ const virtualKeyboard = {
             {
                 class: "keycap tex",
                 label: "<i>x</i>",
-                insert: "$$x$$"
+                insert: "x"
             },
             {
                 class: "separator w5"
@@ -63,7 +63,7 @@ const virtualKeyboard = {
             {
                 class: "keycap tex",
                 label: "<i>y</i>",
-                insert: "$$y$$"
+                insert: "y"
             },
             {
                 class: "separator w5"
