@@ -9,8 +9,8 @@ This is a study web app for A2 Maths class, made by students from An Giang Unive
 ## Team members
 - 
 - 
--
--
+- 
+- 
 ## Link Demo
 https://calculus-project.netlify.app/
 
