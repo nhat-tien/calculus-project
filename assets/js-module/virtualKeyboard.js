@@ -40,18 +40,18 @@ const virtualKeyboard = {
             {
                 class: "keycap tex",
                 insert: "$$#@^{2}$$",
-                label: "<span><i>x</i>&thinsp;²</span>"
+                latex: "{#0}^{2}"
+            },
+            {
+                class: "keycap tex",
+                insert: "$$#@^{3}$$",
+                latex: "{#0}^{3}"
             },
             {
                 class: "keycap tex",
                 insert: "$$#@^{#0}$$",
                 //label: "<span><i>x</i><sup>&thinsp;<i>n</i></sup></span>"
-                latex: "x^{#0}"
-            },
-            {
-                class: "keycap small",
-                insert: "$$\\sqrt{#0}$$",
-                latex: "\\sqrt{#0}"
+                latex: "{#0}^{#0}"
             }
         ],
         [
@@ -91,7 +91,8 @@ const virtualKeyboard = {
             },
             {
                 class: "keycap small",
-                latex: "\\frac{#0}{#0}"
+                latex: "\\frac{#0}{#0}",
+                insert: "\\frac{{#0}}{#0}"
             },
             {
                 class: "keycap",
@@ -99,9 +100,9 @@ const virtualKeyboard = {
                 insert: "$$ln(#0)$$"
             },
             {
-                class: "keycap",
-                latex: "\\exponentialE",
-                insert: "e"
+                class: "keycap small",
+                latex: "\\sqrt{#0}",
+                insert: "\\sqrt{#0}"
             }
         ],
         [
@@ -144,13 +145,13 @@ const virtualKeyboard = {
                 insert: "$$arctan(#0)$$"
             },
             {
-                class: "keycap tex",
-                latex: "\\exponentialE",
-                insert: "e"
+                class: "keycap",
+                latex: "\\ln",
+                insert: "$$ln(#0)$$"
             },
             {
                 class: "keycap",
-                latex: "\\exponentialE",
+                latex: "\\exponentialE^",
                 insert: "e"
             }
         ],
