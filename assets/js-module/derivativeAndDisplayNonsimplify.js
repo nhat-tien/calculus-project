@@ -1,12 +1,12 @@
 import handleTexToExpr from "./handleTexToExpr.js";
 
-export default function derivativeAndDisplay() {
+export default function derivativeAndDisplayNonsimplify() {
     const mf = document.getElementById("formula");
     const expr = handleTexToExpr(mf.value);
 
-    const nodeY = math.derivative(expr,"y");
-    const nodeX = math.derivative(expr,"x");
-    const nodeZ = math.derivative(expr,"z");
+    const nodeY = math.derivative(expr,"y", {simplify: false});
+    const nodeX = math.derivative(expr,"x", {simplify: false});
+    const nodeZ = math.derivative(expr,"z", {simplify: false});
 
     const answerX = document.getElementById("derivativeX");
     const answerY = document.getElementById("derivativeY");

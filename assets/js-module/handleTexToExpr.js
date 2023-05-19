@@ -42,7 +42,16 @@ export default function handleTexToExpr( tex ) {
             this.tex = this.tex.replaceAll(/arctan/g,"atan");
             return this;
         }
-
+        replaceSqrtN() {
+            var str = this.tex;
+            const index = str.indexOf("sqrt[");
+            if(index != -1) {
+                const subStr = str.substring(str.indexOf("[")+1, str.indexOf("]")); 
+                this.tex = str.replaceAll(/sqrt\[.*\]/g,"cbrt");
+                return this;
+            }
+            return this;
+        }
     }
     
     const texString = new TexString(tex);
@@ -56,6 +65,7 @@ export default function handleTexToExpr( tex ) {
                 .replaceExponentialE()
                 .addAsterick()
                 .replaceArctan()
+                .replaceSqrtN()
 
     return str.tex;
 }

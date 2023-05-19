@@ -56,11 +56,24 @@ body {
     align-items: center;
 }
 
+.btn-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .btn-primary {
     background-color: #8ab4f8;
     color: #23242A;
     padding: 0.6em;
     border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: #8ab4f8;
+    padding: 0.6em;
+    border: 1px solid #8ab4f8;
     border-radius: 10px;
     cursor: pointer;
 }

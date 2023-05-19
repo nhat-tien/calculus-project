@@ -96,13 +96,13 @@ const virtualKeyboard = {
             },
             {
                 class: "keycap",
-                latex: "\\ln",
-                insert: "$$ln(#0)$$"
-            },
-            {
-                class: "keycap small",
                 latex: "\\sqrt{#0}",
                 insert: "\\sqrt{#0}"
+            },
+            {
+                class: "keycap",
+                latex: "\\sqrt[3]{#0}",
+                insert: "\\sqrt[3]{#0}"
             }
         ],
         [
@@ -114,7 +114,7 @@ const virtualKeyboard = {
             {
                 class: "keycap tex digit",
                 label: "<i>z</i>",
-                insert: "$$z$$"
+                insert: "z"
             },
             {
                 class: "separator w5"
@@ -174,7 +174,7 @@ const virtualKeyboard = {
             },
             {
                 class: "keycap",
-                latex: ","
+                latex: "."
             },
             {
                 class: "keycap tex",
