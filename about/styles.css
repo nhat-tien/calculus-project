@@ -54,6 +54,16 @@ header {
     font-size: 1.1rem;
 }
 
+.teacher__link {
+    text-decoration: none;
+    color: black;
+}
+
+.teacher__logo {
+    position: relative;
+    top: 7px;
+}
+
 .title {
     margin: 2em auto;
 }
