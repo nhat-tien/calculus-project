@@ -6,38 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toán A2 | AGU</title>
     <script src="index.js"></script>
+    <link rel="icon" href="assets/logo/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@400;500;600;700&display=swap" rel="stylesheet">
 <body>
     <header>
         <div class="university-logo">
-            <img src="assets/logo/agu_logo.png" alt="agu-logo" width="50px"/>
-            <img src="assets/logo/logo-dhqg.png" alt="vnuhcm-logo" width="100px"/>
+            <a href="https://www.facebook.com/YouthAGU" target="_blank"><img src="assets/logo/agu_logo.png" alt="agu-logo" width="50px"/></a>
+            <a href="#"><img src="assets/logo/logo-dhqg.png" alt="vnuhcm-logo" width="100px"/></a>
         </div>
         <div class="circle">
-            <img src="assets/logo/logo-team.png" alt="logo-team" width="30px"/>
+            <a href="/"><img src="assets/logo/logo-team.png" alt="logo-team" width="30px"/></a> 
         </div>
     </header>
     <main>
         <div class="main-container">
         <div class="teacher">
             <div class="teacher__heading">Giảng viên hướng dẫn</div>
+            <img src="./assets/images/LeKienThanh.jpg" alt="" class="teacher__img" />
             <div class="teacher__body">Thầy Lê Kiên Thành</div>
         </div>
         <div class="title">
             <h1 class="title__heading">Dự án học tập</h1>
             <p class="title__body">Ứng dụng thư viện JavaScript vào giải bài toán đạo hàm riêng</p>
         </div> 
-        <div class="intro">
-            <p>Môn: Toán A2</p>
+        <div class="team">
+            <p class="team__heading">Thành viên nhóm</p>
+            <div class="team__member">
+                <img src="./assets/members/TranPhuocToan.jpg" alt="" class="member__img" />
+                <div class="member__desc">
+                    <p class="member__name --color-blue">Trần Phước Toàn</p>
+                    <p class="member__info">Lớp: DH23TH2</p>
+                    <p class="member__info">MSSV: DTH225756</p>
+                    <img src="./assets/sticker/toan.gif" alt="" class="member__sticker"/>
+                </div>
+            </div>
+            <div class="team__member--reverse">
+                <img src="./assets/members/NguyenThiHongQuyen.jpg" alt="" class="member__img" />
+                <div class="member__desc">
+                    <p class="member__name --color-green">Nguyễn Thị Hồng Quyên</p>
+                    <p class="member__info">Lớp: DH23TH3</p>
+                    <p class="member__info">MSSV: DTH225736</p>
+                    <img src="./assets/sticker/quyen.gif" alt="" class="member__sticker"/>
+                </div>
+            </div>
+            <div class="team__member">
+                <img src="./assets/members/NgoNguyenYenNhi.jpg" alt="" class="member__img" />
+                <div class="member__desc">
+                    <p class="member__name --color-purple">Ngô Nguyễn Yến Nhi</p>
+                    <p class="member__info">Lớp: DH23TH2</p>
+                    <p class="member__info">MSSV: DTH225712</p>
+                    <img src="./assets/sticker/nhi.png" alt="" class="member__sticker" style="width: 80px;"/>
+                </div>
+            </div>
+            <div class="team__member--reverse">
+                <img src="./assets/members/ToTrungTin.jpg" alt="" class="member__img" />
+                <div class="member__desc">
+                    <p class="member__name --color-red">Tô Trung Tín</p>
+                    <p class="member__info">Lớp: DH23TH3</p>
+                    <p class="member__info">MSSV: DTH225754</p>
+                    <img src="./assets/sticker/tin.gif" alt="" class="member__sticker"/>
+                    <img>
+                </div>
+            </div>
+            <div class="team__member">
+                <img src="./assets/members/LeDangNhatTien.jpg" alt="" class="member__img" />
+                <div class="member__desc">
+                    <p class="member__name --color-orange">Lê Đặng Nhật Tiến</p>
+                    <p class="member__info">Lớp: DH23TH3</p>
+                    <p class="member__info">MSSV: DTH225750</p>
+                    <img src="./assets/sticker/tien.gif" alt="" class="member__sticker"/>
+                </div>
+            </div>
         </div>
     </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="greeting">
+            <div class="greeting__heading">Xin cảm ơn các bạn đã ghé thăm 🧡</div>
+            <img src="./assets/images/greeting.gif" alt="" class="greeting__img"/>
+        </div>
+        <div class="contact">
+            <p>Source code</p>
+            <a href="https://github.com/nhat-tien/calculus-project" target="_blank">
+                <img src="./assets/logo/github-mark.png" alt="" class="github-icon"/>
+            </a>
+        </div>
     </footer>
 </body>
 </html>

@@ -5,9 +5,10 @@
 
 
 body {
-    background: rgb(62,109,247);
-    background: linear-gradient(90deg, rgba(62,109,247,1) 15%, rgba(91,255,171,1) 73%);
-    font-family: 'Montserrat', sans-serif;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
 }
 
 .teacher {
-    margin-top: 2em;
+    margin-top: 0.7em;
     text-align: center;
 }
 
@@ -44,8 +45,13 @@ header {
     padding: 0.3em;
 }
 
+.teacher__img {
+    width: 120px;
+    border-radius: 10px;
+}
+
 .teacher__body {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .title {
@@ -68,9 +74,109 @@ main {
     justify-content: center;
 }
 .main-container {
-    border: 1px solid black;
     border-radius: 10px;
-    margin-top: 40px;
     padding: 1.5em;
     max-width: fit-content;
+}
+
+.team__heading {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 50px auto;
+}
+
+.team__member {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.team__member--reverse {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.member__img { 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.member__desc {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 18ch;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.member__name {
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+.--color-blue {
+    color: #047689;
+}
+
+.--color-green {
+    color: #088417;
+}
+
+.--color-orange {
+    color: #a56b00;
+}
+
+.--color-red {
+    color: #820606;
+}
+
+.--color-purple {
+    color: #5c007d;
+}
+
+.member__info {
+    font-size: 0.8rem;
+}
+
+.member__sticker {
+    width: 120px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting__heading {
+    text-align: center;
+    font-weight: 600;
+}
+
+.greeting__img {
+    width: 150px;
+}
+
+.contact {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.github-icon {
+    width: 35px;
+    height: 35px;
 }
