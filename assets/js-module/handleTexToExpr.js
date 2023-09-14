@@ -1,71 +1,23 @@
 
 export default function handleTexToExpr( tex ) {
-    class TexString {
-        constructor(tex) {
-            this.tex = tex; 
-        }
-        removeBackslash() {
-            this.tex = this.tex.split("\\").join("");
-            return this;
-        }
-        removeLeftAndRight() {
-            this.tex = this.tex.replaceAll(/left/g,"").replaceAll(/right/g,"");
-            return this;
-        }
-        removeCurlyBrackets() {
-            this.tex = this.tex.replaceAll("{","(").replaceAll("}",")");
-            return this;
-        }
-        removeFrac() {
-            this.tex = this.tex.replaceAll(/frac/g,"");
-            return this;
-        }
-        addDivide() {
-            this.tex = this.tex.replaceAll(")(",")/(");
-            return this;
-        }
-        replaceLn() {
-            this.tex = this.tex.replaceAll(/ln/g,"log");
-            return this;
-        } 
-        replaceExponentialE() {
-            this.tex = this.tex.replaceAll(/exponentialE/g,"e");
-            return this;
-        }
-        //*
-        addAsterick() {
-            this.tex = this.tex.replaceAll(/xy/g,"x*y");
-            this.tex = this.tex.replaceAll(/yx/g,"x*y");
-            return this;
-        }
-        replaceArctan() {
-            this.tex = this.tex.replaceAll(/arctan/g,"atan");
-            return this;
-        }
-        replaceSqrtN() {
-            var str = this.tex;
-            const index = str.indexOf("sqrt[");
-            if(index != -1) {
-                const subStr = str.substring(str.indexOf("[")+1, str.indexOf("]")); 
-                this.tex = str.replaceAll(/sqrt\[.*\]/g,"cbrt");
-                return this;
+            tex = tex.split("\\").join("");
+            tex = tex.replaceAll(/left/g,"").replaceAll(/right/g,"");
+            tex = tex.replaceAll("{","(").replaceAll("}",")");
+            tex = tex.replaceAll(/frac/g,"");
+            tex = tex.replaceAll(")(",")/(");
+            tex = tex.replaceAll(/ln/g,"log");
+            tex = tex.replaceAll(/exponentialE/g,"e");
+            tex = tex.replaceAll(/xy/g,"x*y");
+            tex = tex.replaceAll(/yx/g,"y*x");
+            tex = tex.replaceAll(/yz/g,"y*z");
+            tex = tex.replaceAll(/zy/g,"z*y");
+            tex = tex.replaceAll(/xz/g,"x*z");
+            tex = tex.replaceAll(/zx/g,"z*x");
+            tex = tex.replaceAll(/arctan/g,"atan");
+            //replace sqrtN 
+            const indexOfSqrtN = tex.indexOf("sqrt[");
+            if(indexOfSqrtN) {
+                tex = tex.replaceAll(/sqrt\[.*\]/g,"cbrt");
             }
-            return this;
-        }
-    }
-    
-    const texString = new TexString(tex);
-    const str = texString
-                .removeBackslash()
-                .removeLeftAndRight()
-                .removeCurlyBrackets()
-                .removeFrac()
-                .addDivide()
-                .replaceLn()
-                .replaceExponentialE()
-                .addAsterick()
-                .replaceArctan()
-                .replaceSqrtN()
-
-    return str.tex;
+    return tex;
 }
